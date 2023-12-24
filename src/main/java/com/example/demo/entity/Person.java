@@ -1,4 +1,4 @@
-package com.example.demo.controller.entity;
+package com.example.demo.entity;
 
 public class Person {
     private Integer id;

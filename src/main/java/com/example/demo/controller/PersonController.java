@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import com.example.demo.controller.entity.Person;
+import com.example.demo.entity.Person;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -32,4 +32,13 @@ public class PersonController {
         person.setSurname(requestPerson.getSurname());
         return person;
     }*/
+    @GetMapping("/ornekRequestParam")
+        public void ornekRequestParam(@RequestParam(nane="name") String adi){
+            System.out.println(adi);
+        }
+
+    @GetMapping("/ornekPathVeriable/{adi}")
+    public String ornekPathVeriable(@PathVariable String adi){
+        System.out.println(adi);
+    }
 }
